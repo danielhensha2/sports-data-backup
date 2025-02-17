@@ -1,0 +1,30 @@
+
+api_url                   = "https://sport-highlights-api.p.rapidapi.com/basketball/highlights"
+rapidapi_host             = "sport-highlights-api.p.rapidapi.com"
+rapidapi_key              = "27e37f7dc9msh3dbd7f37d1418a0p1695cbjsn5c28f82405fe"
+mediaconvert_endpoint     = "https://vasjpylpa.mediaconvert.us-east-1.amazonaws.com"
+date                      = "2023-12-01"
+league_name               = "NCAA"
+limit                     = "10"
+input_key                 = "highlights/basketball_highlights.json"
+output_key                = "videos/first_video.mp4"
+retry_count               = "3"
+retry_delay               = "30"
+wait_time_between_scripts = "60"
+project_name              = "sports-backup"
+aws_region                = "us-east-1"
+vpc_cidr                  = "10.0.0.0/16"
+public_subnet_cidr        = "10.0.1.0/24"
+private_subnet_cidr       = "10.0.2.0/24"
+s3_bucket_name            = "dev-sports-highlights-bucket-20250217"
+dynamodb_table            = "SportsHighlights"
+ecs_cluster               = "sports-backup-cluster"
+ecr_repository_name       = "highlight-pipeline2-final"
+task_family               = "sports-backup-task"
+task_cpu                  = "512"
+task_memory               = "1024"
+container_name            = "sports-backup-container"
+
+
+
+
